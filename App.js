@@ -1,19 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import styled from 'styled-components/native';
+import Home from './src/pages/home/index';
+import {SafeAreaView} from 'react-native-safe-area-context'
 
-const AppView = styled.SafeAreaView``
-const Status = styled.StatusBar``
-const Title = styled.Text`
-  font-size: 100px;
-  color: blue;
-`
+
 
 export default function App() {
   return (
-    <AppView>
-      <Status /> 
-      <Title>App com Styled</Title>
-    </AppView>
+    <SafeAreaView style={{ flex: 1 }}>
+      <StatusBar hidden/> 
+      <Home/>
+    </SafeAreaView>
   );
 }
 
