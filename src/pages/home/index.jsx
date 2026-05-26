@@ -15,6 +15,7 @@ export const Home = () => {
             </GreetingsTitle>
             <GreeatingsAvatar source={require("../../assets/greetings-avatar.png")} />
         </Greetings>
+        <ScheduleCard></ScheduleCard>
     </Container>
 
    
